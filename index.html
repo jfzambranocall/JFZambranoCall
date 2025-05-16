@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://localhost:8080/JFZambranoCallCenterWeb/inicio_sesion.jsp -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Iniciar Sesión - JF Zambrano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       .navbar {
+           background-color: #002F5F;
+           padding: 10px 20px;
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+           width: 100%;
+           box-sizing: border-box;
+           margin-bottom: 20px;
+           position: fixed; /* Asegura que la barra esté en la parte superior */
+           top: 0; /* Coloca la barra arriba */
+           left: 0;
+           z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        }
+
+       .navbar-left {
+           display: flex;
+           align-items: center;
+        }
+
+       .navbar-button {
+           background-color: white;
+           color: #002F5F;
+           padding: 6px 14px;
+           text-decoration: none;
+           border-radius: 5px;
+           font-weight: bold;
+           margin-right: 15px;
+           transition: background-color 0.3s ease;
+        }
+
+       .navbar-button:hover {
+            background-color: #e0e0e0;
+        }
+
+       .navbar-logo {
+           height: 40px;
+           width: auto;
+        }
+
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: #f2f2f2;
+            padding-top: 60px; /* Agregado para que el contenido no se sobreponga con la barra */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 100%;
+            max-width: 280px; /* O prueba 300px si deseas más ancho */
+            height: auto;
+            border-radius: 0;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .login-container img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .login-container h1 {
+            font-size: 28px;
+            color: #002F5F;
+            margin-bottom: 5px;
+        }
+
+        .login-container p.subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .login-container .checkbox-container {
+            text-align: left;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .login-container button {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #005fcc;
+        }
+
+        .login-container .legal {
+            font-size: 12px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .login-container .legal a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-container .forgot {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-container .forgot:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1104.0" data-gr-ext-installed="">
+    <header class="navbar">
+        <div class="navbar-left">
+         <a href="http://localhost:8080/JFZambranoCallCenterWeb/inicio.jsp" class="navbar-button">Inicio</a>
+         <img src="./Iniciar Sesión - JF Zambrano_files/logo JFZambrano.png" alt="Logo JF Zambrano" class="navbar-logo">
+        </div>
+</header>
+    <div class="login-container">
+        <img src="./Iniciar Sesión - JF Zambrano_files/Logo_nombre_debajo.png" alt="Logo JF Zambrano" class="logo-img">
+        <p class="subtitle">Inicie sesión con sus credenciales</p>
+        
+           
+        
+        &lt;<form action="http://localhost:8080/JFZambranoCallCenterWeb/procesarFormulario" method="post">
+            <label for="usuario">Nombre de usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+
+            <div class="checkbox-container">
+            <label for="recordar">
+                <input type="checkbox" id="recordar" name="recordar">
+                Recordar nombre de usuario
+            </label>
+            </div>
+
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña">
+
+            <button type="submit" name="role" value="Clientes">Iniciar sesión</button>
+        </form>
+
+        <p class="legal">
+            Al continuar, acepta el <a href="http://localhost:8080/JFZambranoCallCenterWeb/inicio_sesion.jsp#">Contrato de cliente</a> y el 
+            <a href="http://localhost:8080/JFZambranoCallCenterWeb/inicio_sesion.jsp#">Aviso de privacidad</a>. Este sitio utiliza cookies esenciales. 
+            Consulte nuestro <a href="http://localhost:8080/JFZambranoCallCenterWeb/inicio_sesion.jsp#">Aviso de cookies</a> para más información.
+        </p>
+
+        <a class="forgot" href="http://localhost:8080/JFZambranoCallCenterWeb/inicio_sesion.jsp#">¿Ha olvidado la contraseña?</a>
+    </div>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
